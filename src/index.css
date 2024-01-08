@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: aliceblue;
+    font-family: sans-serif;
+    animation-name: change;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.container{
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 12px;
+    padding:10px 20px 20px ;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.display{
+   height: 80px;
+   width: 100%; 
+   margin-bottom: 10px;
+   outline: none;
+   border: none;
+   text-align: right;
+   margin-bottom: 10px;
+   font-size: 25px;
+   color: black;
+   pointer-events: none;
+}
+.buttons{
+    display : grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+.buttons button{
+    padding: 12px 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+.buttons button:active{
+   transform: scale(1.5); 
+
+}
+.operator{
+    color: #2f9fff;
+}
+@keyframes change {
+    0%, 100% {
+      background-color: aliceblue;
+    }
+    10% {
+      background-color: antiquewhite;
+    }
+    20% {
+      background-color: burlywood;
+    }
+    30% {
+      background-color: coral;
+    }
+    40% {
+      background-color: crimson;
+    }
+    50% {
+      background-color: #7fb3d5;
+    }
+    60% {
+      background-color: #f7dd72;
+    }
+    70% {
+      background-color: #ff847c;
+    }
+    80% {
+      background-color: #aee1e1;
+    }
+    90% {
+      background-color: #c1a1d3;
+    }
+  }
+  
+  
